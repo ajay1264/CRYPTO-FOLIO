@@ -16,7 +16,7 @@ export default function LoginModal({ closemod }) {
   const [loggedin, setloggedin] = useState(false);
 
   const eventHandler = async () => {
-    const response = await fetch("http://localhost:3001/register/creatuser", {
+    const response = await fetch("https://crypto-folio.onrender.com/register/creatuser", {
       method: "POST",
       headers: {
         "Content-type": "application/json",

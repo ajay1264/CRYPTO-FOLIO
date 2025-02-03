@@ -15,7 +15,7 @@ export default function Dashboard() {
   const getallTransaction = async () => {
     await axios({
       method: "POST",
-      url: "http://localhost:3001/wallet/getwalletTransaction",
+      url: "https://crypto-folio.onrender.com/wallet/getwalletTransaction",
       data: {
         login: login,
       },
@@ -58,7 +58,7 @@ export default function Dashboard() {
   const getamount = async () => {
     await axios({
       method: "POST",
-      url: "http://localhost:3001/wallet/getwalletAmount",
+      url: "https://crypto-folio.onrender.com/wallet/getwalletAmount",
       data: {
         login: login,
       },
@@ -95,7 +95,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchuserdata = async () => {
       const response = await fetch(
-        "http://localhost:3001/dashboard/userdetails",
+        "https://crypto-folio.onrender.com/dashboard/userdetails",
         {
           method: "POST",
           body: JSON.stringify({ UserId: userid }),

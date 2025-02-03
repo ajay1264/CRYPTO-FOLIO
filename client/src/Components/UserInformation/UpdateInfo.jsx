@@ -38,7 +38,7 @@ export default function UpdateInfo() {
   
       // Send Image URL to Backend
       const profileUpdateResponse = await fetch(
-        "http://localhost:3001/dashboard/profileupdate",
+        "https://crypto-folio.onrender.com/dashboard/profileupdate",
         {
           method: "POST",
           headers: {
@@ -64,7 +64,7 @@ export default function UpdateInfo() {
   useEffect(() => {
     const fetchuserdata = async () => {
       const response = await fetch(
-        "http:localhost:3001/dashboard/userdetails",
+        "https://crypto-folio.onrender.com/dashboard/userdetails",
         {
           method: "POST",
           body: JSON.stringify({ UserId: userid }),
